@@ -3,14 +3,14 @@ requires = ["setuptools>=77", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "async-cnes"
+name = "3s-cnes-client"
 version = "0.1.0"
 description = "Cliente Python assíncrono para o serviço SOAP oficial do CNES."
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
 authors = [
-    { name = "async-cnes contributors" },
+    { name = "3S" },
 ]
 keywords = ["cnes", "datasus", "saude", "soap", "async", "httpx"]
 classifiers = [
@@ -43,10 +43,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/async-cnes/async-cnes"
-Documentation = "https://github.com/async-cnes/async-cnes#readme"
-Source = "https://github.com/async-cnes/async-cnes"
-Issues = "https://github.com/async-cnes/async-cnes/issues"
+Homepage = "https://github.com/3S-Saude/3s-cnes-client"
+Documentation = "https://github.com/3S-Saude/3s-cnes-client#readme"
+Source = "https://github.com/3S-Saude/3s-cnes-client"
+Issues = "https://github.com/3S-Saude/3s-cnes-client/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]

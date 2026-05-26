@@ -1,7 +1,7 @@
 # Publicação
 
-Este projeto foi preparado para publicação no PyPI e no TestPyPI usando
-Trusted Publishing do GitHub Actions.
+Este projeto foi preparado para publicação no PyPI usando Trusted Publishing
+do GitHub Actions, seguindo o mesmo padrão do `3s-cadsus-client`.
 
 ## Build local
 
@@ -14,23 +14,16 @@ python -m build
 twine check dist/*
 ```
 
-## TestPyPI
-
-1. Crie o projeto `async-cnes` no TestPyPI.
-2. Configure Trusted Publisher apontando para:
-   - Owner/repository do GitHub;
-   - workflow `.github/workflows/testpypi.yml`;
-   - environment `testpypi`.
-3. Execute manualmente o workflow `Publish to TestPyPI`.
-
 ## PyPI
 
-1. Crie o projeto `async-cnes` no PyPI.
+1. Crie o projeto `3s-cnes-client` no PyPI.
 2. Configure Trusted Publisher apontando para:
-   - Owner/repository do GitHub;
-   - workflow `.github/workflows/pypi.yml`;
+   - Owner: `3S-Saude`;
+   - Repository name: `3s-cnes-client`;
+   - workflow `.github/workflows/publish.yml`;
    - environment `pypi`.
-3. Crie uma release no GitHub com tag semântica, por exemplo `v0.1.0`.
+3. Abra um pull request para `main`.
+4. Ao fazer merge do pull request, o workflow gera os artefatos e publica no PyPI.
 
 O workflow faz build a partir do checkout limpo e publica com OIDC, sem token
 persistido no repositório.

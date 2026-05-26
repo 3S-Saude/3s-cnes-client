@@ -16,4 +16,4 @@ O formato segue a ideia de Keep a Changelog e versionamento semântico.
 - Tratamento de SOAP Fault.
 - Modelos Pydantic serializáveis para JSON.
 - Testes unitários com respostas SOAP mockadas.
-- Workflows de CI, PyPI e TestPyPI com Trusted Publishing.
+- Workflow de build, validação e publicação no PyPI com Trusted Publishing.

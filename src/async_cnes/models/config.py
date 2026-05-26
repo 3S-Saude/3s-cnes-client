@@ -9,7 +9,7 @@ import httpx
 from httpx._types import AuthTypes
 
 DEFAULT_ENDPOINT = "https://servicos.saude.gov.br/cnes/CnesService/v1r0"
-DEFAULT_USER_AGENT = "async-cnes/0.1.0"
+DEFAULT_USER_AGENT = "3s-cnes-client/0.1.0"
 DEFAULT_RETRY_STATUS_CODES = frozenset({429, 500, 502, 503, 504})
 
 

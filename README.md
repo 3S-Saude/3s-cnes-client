@@ -1,4 +1,4 @@
-# async-cnes
+# 3s-cnes-client
 
 Cliente Python moderno, tipado e assíncrono para o serviço SOAP oficial do CNES
 (Cadastro Nacional de Estabelecimentos de Saúde).
@@ -9,7 +9,7 @@ O usuário informa um CNES e recebe dados normalizados do estabelecimento.
 ## Instalação
 
 ```bash
-pip install async-cnes
+pip install 3s-cnes-client
 ```
 
 ## Exemplo simples
@@ -128,5 +128,5 @@ ASYNC_CNES_RUN_INTEGRATION=1 pytest -m integration
 
 ## Publicação
 
-O projeto inclui workflows de GitHub Actions para lint, type checking, testes,
-build, TestPyPI e PyPI com Trusted Publishing. Veja `docs/publicacao.md`.
+O projeto inclui workflow de GitHub Actions para testes, build e publicação no
+PyPI com Trusted Publishing. Veja `docs/publicacao.md`.
