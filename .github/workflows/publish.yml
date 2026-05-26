@@ -1,4 +1,5 @@
 name: Publish Python Package
+run-name: Publish Python Package
 
 on:
   pull_request:
